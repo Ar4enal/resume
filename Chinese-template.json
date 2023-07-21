@@ -1,0 +1,109 @@
+{
+	"titleNameMap": {
+		"educationList": "教育背景",
+		"workExpList": "工作经历",
+		"projectList": "项目经历",
+		"skillList": "个人技能",
+		"awardList": "更多信息",
+		"workList": "个人作品",
+		"aboutme": "自我介绍"
+	},
+	"avatar": {
+		"hidden": false
+	},
+	"profile": {
+		"name": "张博洋",
+		"email": "zby19960415@163.com",
+		"mobile": "13880240065",
+		"github": "",
+		"zhihu": "",
+		"workExpYear": "上海华为技术有限公司 - 3年",
+		"workPlace": "",
+		"positionTitle": ""
+	},
+	"educationList": [{
+		"edu_time": ["2018.10.01", "2019.12.16"],
+		"school": "拉夫堡大学（英国）",
+		"major": "高级计算机科学"
+	}, {
+		"edu_time": ["2014.09.01", "2018.06.30"],
+		"school": "四川大学",
+		"major": "计算机科学与技术",
+		"academic_degree": "本科",
+		"dataIndex": 1
+	}],
+	"awardList": [],
+	"workExpList": [{
+		"company_name": "上海华为技术有限公司",
+		"department_name": "无线网络产品线",
+		"work_time": ["2022.01", ""],
+		"work_desc": "1. 负责华为无线网络产品线的5G/5.5G新应用开发工作，包括AR/VR软件开发、云渲染、数字人、AI模型的训练和使用、全息通话、3D光场屏应用开发，在华为多个展会上部署演示。开发涉及多个平台，如安卓、IOS、Windows/Linux桌面、Unity。\n2. 负责实验室机房的管理工作，包括配置服务器、交换机、实验室安全问题。",
+		"dataIndex": 0
+	}, {
+		"company_name": "上海华为技术有限公司",
+		"department_name": "无线网络产品线",
+		"work_time": ["2020.06", "2021.12"],
+		"work_desc": "1. 负责华为无线网络产品线的5G产品相关测试工作，对多个5G新特性进行分析和测试，支撑一线解决方案部署，满足客户指标。\n2. 测试工作内容包括实验室环境搭建、测试计划的制定、测试用例的设计和执行、自动化测试、测试结果的记录和分析、和开发团队合作解决产品问题、测试报告和文档的编写等。",
+		"dataIndex": 1
+	}],
+	"skillList": [{
+		"skill_name": "Python",
+		"skill_level": 90,
+		"skill_desc": "熟练掌握Python语言，使用Python构建自动化测试环境，编写执行自动化测试用例；掌握TensorFlow、PyTorch等AI框架",
+		"dataIndex": 0
+	}, {
+		"skill_name": "Java",
+		"skill_level": 80,
+		"skill_desc": "熟练掌握Java语言；掌握使用Android编程，AAR、JNI开发；掌握 Android 架构下网络通信机制，对 Socket 通信、TCP/UDP 和 HTTP协议有较深刻的理解"
+	}, {
+		"skill_name": "C",
+		"skill_level": 60,
+		"skill_desc": "了解使用C/C++、C#、Golang、MySQL"
+	}, {
+		"skill_name": "视频",
+		"skill_level": 80,
+		"skill_desc": "熟悉GStreamer、WebRTC音视频组件、视频编解码技术"
+	}, {
+		"skill_name": "工具",
+		"skill_level": 100,
+		"skill_desc": "熟练使用Unittest、Appium、UiAutomator2、JMeter、Postman、Git、SFTP、Wireshark、Docker等开发工具、项目管理工具",
+		"dataIndex": 4
+	}, {
+		"skill_name": "系统",
+		"skill_level": 90,
+		"skill_desc": "熟悉Linux操作系统、常用Shell操作指令，私有云公有云服务器操作流程，基站维护知识"
+	}, {
+		"skill_name": "英语",
+		"skill_level": 90,
+		"skill_desc": "英语听说读写流利，大学英语四级（544），大学英语六级（515），雅思（6.5）"
+	}],
+	"projectList": [{
+		"project_name": "AR搜索",
+		"project_role": "开发/测试",
+		"project_time": "2022.07 - 2023.02",
+		"project_desc": "开发部署身份识别跟踪服务端，接收AR眼镜发送的视频画面，检测画面中的目标人物。之后根据面部信息进行人脸身份搜索，同时跟踪人物位置，搜索信息实时显示在AR眼镜中。",
+		"project_content": "\n1. 服务端通过WebRTC接收视频画面，将帧画面传入物体检测器。物体检测模块使用YOLOv4 TensorRT模型进行加速推理，检测出人体目标物体。\n2. 身份搜索功能使用华为云人脸搜索服务，调用HTTP API发送请求，将检测出的人脸数据上传至搜索平台，通过WebRTC Datachannel将结果传输给AR眼镜端。AR眼镜接收结果并显示。\n3. 除身份识别外，新增菜肴识别模型。基于 Python 与 PyTorch 完成了菜肴数据集食物检测和识别的训练，训练完成后将二者导出为 onnx模型，在项目中转换为TensorRT模型后使用。\n4. 跟踪模块使用KLT跟踪算法，使用Android Studio将跟踪算法函数打包为AAR供Unity端调用。\n5. 开发端云协同架构下的多种终端版本。对该原型的终端上行算力卸载情况进行研究，分离物体检测、搜索和跟踪模块，分析关键指标，输出端云协同算力上行算力卸载分析报告。\n6. 打包服务端运行环境Docker镜像，部署在公有云上支撑各个展会演示。",
+		"dataIndex": 0
+	}, {
+		"project_name": "数字人动捕直播软件",
+		"project_role": "开发/测试",
+		"project_time": "2022.01 - 2022.06",
+		"project_desc": "在安卓端完成图片一键生成数字人，用户面部和身体的动作捕捉，上传身体动捕和音频数据至云端数字人平台控制数字人并进行直播通话。",
+		"project_content": "\n1. 安卓端对接数字人生成平台，调用手机相机拍摄照片，对接云平台API接口，通过HTTP POST请求上传图片至云平台生成数字人，再通过GET请求实现选择、下载、修改数字人等操作。\n2. 安卓端使用MediaPipe框架进行身体动作捕捉，使用华为AR Engine进行面部表情捕捉，传输动捕信息时使用Jackson将动捕数据对象序列化。\n3. 安卓端集成WebRTC音视频框架，实现麦克风采集声音和回显云渲染数字人画面。在云端部署WebRTC SFU服务器，连接安卓端和Unity数字人客户端，完成音视频和动捕数据的传输。直播推流采用RTMP协议，推送至各个直播平台进行直播。\n4. 总结输出数字人动捕数据传输研究报告，抓包分析和优化了当前数字人动捕传输数据、数据编码方式与网络带宽使用情况。对未来XR多人交互场景进行了设计和数据预估。",
+		"dataIndex": 1
+	}, {
+		"project_name": "5G版本性能测试",
+		"project_role": "测试",
+		"project_time": "2020.06 - 2021.12",
+		"project_desc": "负责多个5G新特性的版本测试工作，联合设计和开发同事发现并解决产品质量问题，保障5G新版本上线，无重大客户面问题。",
+		"project_content": "\n1. 搭建测试环境，包括搭建5G基站和部署测试工具，模拟真实室内室外测试环境。\n2. 编写测试设计、测试用例，执行测试用例，定位问题、回归测试、输出测试报告，保障Beta局点版本上线。在内场模拟搭建多种测试环境，使用终端上下行灌包工具进行业务灌包，使用Wireshark对网络进行分析。测试内容包括单用户峰值、移动性、多用户容量等。\n3. 负责自动化用例设计和编写，控制基站、终端、VAM等设备，用例包括长稳可靠性、多场景遍历、新版本迭代等。使用Unittest框架编写执行自动化测试用例2000+，提高测试效率，减少手动测试的时间和人力成本。\n4. 善于利用工具和代码减少重复性劳动，使用Python开发多个小工具提高团队的工作效率。"
+	}],
+	"workList": [],
+	"aboutme": {
+		"aboutme_desc": "1. 熟悉软件测试流程，能根据需求分析编写测试计划、测试方案，设计测试用例，执行测试用例并提交缺陷报告。能够站在用户角度对系统进行测试，发现以及解决问题。\n2. 开发过程中有良好的代码编写习惯及文档编写能力，注重代码质量。具有积极主动的沟通、协作和学习能力，有较强的职业道德、团队合作精神和工作责任感。"
+	},
+	"theme": {
+		"color": "#2f5785",
+		"tagColor": "#8bc34a"
+	}
+}
